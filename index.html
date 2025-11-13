@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SalihDigital — Digital Marketer | Growth, Ads & SEO</title>
+  <meta name="description" content="SalihDigital — Performance ads, SEO and social growth." />
+  <meta name="keywords" content="digital marketer, ads, SEO, social media, SalihDigital, marketing, growth" />
+  <meta name="author" content="SalihDigital" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="SalihDigital — Digital Marketer" />
+  <meta property="og:description" content="Performance-first digital marketing: Meta & Google ads, SEO, social growth and branding." />
+  <meta property="og:image" content="assets/og-image.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://<your-github-username>.github.io/<repo>/" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="assets/og-image.jpg" />
+
+  <link rel="icon" href="assets/logo.png" type="image/png" />
+  <link rel="stylesheet" href="style.css">
+  <style>html{scroll-behavior:smooth}</style>
+</head>
+<body class="dark">
+
+  <!-- LOADER -->
+  <div id="siteLoader" class="loader-wrap" aria-hidden="false">
+    <div class="loader">
+      <svg viewBox="0 0 120 120" class="spinner" aria-hidden="true"><circle cx="60" cy="60" r="44" stroke-linecap="round"></circle></svg>
+      <div class="loader-text">SalihDigital</div>
+    </div>
+  </div>
+
+  <!-- HEADER / NAV -->
+  <header class="site-header" role="banner">
+    <nav class="navbar container">
+      <div class="brand">
+        <img src="assets/logo.png" alt="SalihDigital logo" class="logo" />
+        <div class="brand-text">Salih<span>Digital</span></div>
+      </div>
+
+      <ul class="nav-links" id="navLinks" role="menubar">
+        <li role="none"><a role="menuitem" href="#home">Home</a></li>
+        <li role="none"><a role="menuitem" href="#services">Services</a></li>
+        <li role="none"><a role="menuitem" href="#projects">Projects</a></li>
+        <li role="none"><a role="menuitem" href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="controls">
+        <button id="themeToggle" class="icon-btn" aria-pressed="false" title="Toggle theme">🌙</button>
+        <button id="menuToggle" class="icon-btn menu" aria-expanded="false" aria-controls="navLinks">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero" data-parallax>
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <h1 class="typing"><span id="typeWord">SalihDigital</span><span class="cursor">|</span></h1>
+          <p class="lead">I help businesses scale with performance ads, SEO and data-driven social strategies.</p>
+          <div class="hero-cta">
+            <button class="btn primary ripple" data-target="#contact">Hire Me</button>
+            <a class="btn ghost" href="#projects">See Work</a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="card neon-card interactive-card" data-tilt>
+            <h3>Quick stats</h3>
+            <ul class="stats">
+              <li><strong>4x</strong><span>avg ROAS</span></li>
+              <li><strong>+230%</strong><span>lead growth</span></li>
+              <li><strong>20k+</strong><span>organic followers</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section">
+      <div class="container">
+        <h2 class="section-title">Services</h2>
+        <div class="grid cards">
+          <article class="card reveal">Social Media Marketing</article>
+          <article class="card reveal">Paid Ads (Meta & Google)</article>
+          <article class="card reveal">SEO & Content</article>
+          <article class="card reveal">Brand & Creative</article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS (carousel + gallery) -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Recent Projects</h2>
+
+        <div class="carousel-wrap" id="projectsCarousel" aria-label="Projects carousel">
+          <div class="carousel-track">
+            <article class="project-slide card reveal" data-index="0" tabindex="0">
+              <picture>
+                <source media="(min-width:900px)" srcset="assets/project1-1200.jpg">
+                <source media="(min-width:480px)" srcset="assets/project1-800.jpg">
+                <img src="assets/project1-400.jpg" alt="E-commerce Campaign" loading="lazy">
+              </picture>
+              <h4>E-commerce Ad Campaign</h4>
+              <p>4x ROAS — creative + optimization.</p>
+            </article>
+
+            <article class="project-slide card reveal" data-index="1" tabindex="0">
+              <picture>
+                <source media="(min-width:900px)" srcset="assets/project2-1200.jpg">
+                <source media="(min-width:480px)" srcset="assets/project2-800.jpg">
+                <img src="assets/project2-400.jpg" alt="Local Leads Growth" loading="lazy">
+              </picture>
+              <h4>Local Leads Growth</h4>
+              <p>230% more leads via Search + GMB.</p>
+            </article>
+
+            <article class="project-slide card reveal" data-index="2" tabindex="0">
+              <picture>
+                <source media="(min-width:900px)" srcset="assets/project3-1200.jpg">
+                <source media="(min-width:480px)" srcset="assets/project3-800.jpg">
+                <img src="assets/project3-400.jpg" alt="Social Organic Sprint" loading="lazy">
+              </picture>
+              <h4>Social Organic Sprint</h4>
+              <p>20k followers in 3 months.</p>
+            </article>
+          </div>
+
+          <button class="carousel-btn prev" aria-label="Previous project">‹</button>
+          <button class="carousel-btn next" aria-label="Next project">›</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY MODAL -->
+    <div id="galleryModal" class="modal" aria-hidden="true" role="dialog">
+      <button class="modal-close" aria-label="Close gallery">✕</button>
+      <div class="modal-inner">
+        <button class="modal-nav prev" aria-label="Previous image">‹</button>
+        <img id="modalImage" src="" alt="">
+        <button class="modal-nav next" aria-label="Next image">›</button>
+      </div>
+    </div>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+
+        <div class="contact-grid">
+          <form id="contactForm" class="contact-form card">
+            <label for="name">Name</label>
+            <input id="name" name="name" required placeholder="Your name" />
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="you@example.com" />
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project"></textarea>
+            <div class="form-row">
+              <button type="submit" class="btn primary ripple">Send</button>
+              <div id="formStatus" class="muted"></div>
+            </div>
+          </form>
+
+          <aside class="contact-info card">
+            <h3>Let's talk</h3>
+            <p class="muted">Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+            <p class="muted">Based in: Your City, Country</p>
+            <div class="socials">
+              <a class="chip" href="#" aria-label="GitHub">GitHub</a>
+              <a class="chip" href="#" aria-label="LinkedIn">LinkedIn</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> SalihDigital — Built with care</small>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOAT: replace XXXXXXXXXXX with your number (country code + number, no + sign) -->
+  <a id="whatsAppBtn" class="whatsapp" href="https://wa.me/XXXXXXXXXXX?text=Hello%20SalihDigital%20I%20want%20to%20work%20with%20you" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12c0 ..."/></svg>
+    <span>WhatsApp</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
